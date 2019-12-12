@@ -125,7 +125,6 @@ func scan(dir string) (Process, error) {
 	)
 	if err != nil {
 		return proc, fmt.Errorf("could not parse file %s: %w", stat, err)
-
 	}
 
 	proc.Name = proc.Stat.Comm
